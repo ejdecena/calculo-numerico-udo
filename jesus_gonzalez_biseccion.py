@@ -31,7 +31,7 @@ def biseccion(fx, inter, er, n):
         return None
     fa = fx(inter[0]) # Función evaluada en el punto a.
     fb = fx(inter[1]) # Función evaluada en el punto b.
-    if not (fa*fb) < 0: 
+    if not (fa*fb) <= 0: 
         print("No existen raices en el intervalo especificado.")
         return None
     m = (inter[0]+inter[1])/2 # Punto medio.
