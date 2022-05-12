@@ -22,13 +22,13 @@ def biseccion(fx, inter, er, n):
     Debe mostrar por teclado una a una las iteraciones del algoritmo de
     bisección,  hacer la comprobación. y retornar el último punto medio (m)
     """
-    err_aprox = 100 # Error aproximado
+    err_rel = 100 # Error aproximado
     iter_act = 1 # Contador del número de iteraciones
     m_actual = 0 # Punto medio actual
     m_previo = 0 # Punto medio previo
     a = inter[0]
     b = inter[1]
-    while iter_act < n and err_aprox > er:
+    while iter_act < n and err_rel > er:
         m_previo = m_actual
         m_actual = (a + b) / 2
 
@@ -38,11 +38,11 @@ def biseccion(fx, inter, er, n):
             b = m_actual
         
         if iter_act > 1:
-            err_aprox = error_relativo(m_actual, m_previo)
+            err_rel = error_relativo(m_actual, m_previo)
         
         print(f"""===============Iteración {iter_act}===================
 Valor actual: {m_actual}
-Error aproximado: {err_aprox}""")
+Error aproximado: {err_rel}""")
         iter_act += 1
     return m_actual
 
