@@ -3,7 +3,7 @@ from unittest import TestCase
 
 
 from . ejercicio_biseccion import biseccion as profe_biseccion
-jeremy_gonzalez_biseccion 
+ 
 from . jeremy_gonzalez_biseccion import biseccion as jeremy_gonzalez_biseccion 
 
 
