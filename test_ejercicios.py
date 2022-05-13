@@ -4,6 +4,7 @@ from unittest import TestCase
 from . ejercicio_biseccion import biseccion as profe_biseccion
 # INCLUIR ABAJO SU IMPORT
 # from . pedro_perez_biseccion import biseccion as pedro_perez_biseccion
+from cesar_zabala_biseccion import biseccion as cesar_zabala_biseccion
 
 
 class TestEjercicios(TestCase):
