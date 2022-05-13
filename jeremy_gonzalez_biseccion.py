@@ -1,7 +1,7 @@
 import math
 """
-Nombre y Apellidos: <INGRESE AQUÍ NOMBRE Y APELLIDO>
-Cédula: <INGRESE AQUÍ SU CEDULA>
+Nombre y Apellidos: jeremy gonzalez
+Cédula: 27403276
 """
 
 def error_relativo(vact, vant):
