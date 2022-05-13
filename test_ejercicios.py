@@ -2,6 +2,7 @@ import math
 from unittest import TestCase
 
 from . ejercicio_biseccion import biseccion as profe_biseccion
+from . kevin_rojas_biseccion import biseccion as kevin_rojas_biseccion
 # INCLUIR ABAJO SU IMPORT
 # from . pedro_perez_biseccion import biseccion as pedro_perez_biseccion
 from jesus_gonzalez_biseccion import biseccion as jesus_gonzalez_biseccion
