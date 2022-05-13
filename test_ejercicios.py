@@ -4,10 +4,7 @@ from unittest import TestCase
 
 from . ejercicio_biseccion import biseccion as profe_biseccion
 from . jeremy_gonzalez_biseccion import biseccion as jeremy_gonzalez_biseccion 
-from . kevin_rojas_biseccion import biseccion as kevin_rojas_biseccion
-# INCLUIR ABAJO SU IMPORT
-# from . pedro_perez_biseccion import biseccion as pedro_perez_biseccion
-from jesus_gonzalez_biseccion import biseccion as jesus_gonzalez_biseccion
+
 
 
 class TestEjercicios(TestCase):
@@ -21,4 +18,5 @@ class TestEjercicios(TestCase):
 
 if __name__ == "__main__":
     # Testing.
+    pass
     pass
