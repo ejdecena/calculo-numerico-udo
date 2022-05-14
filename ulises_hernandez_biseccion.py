@@ -14,7 +14,7 @@ def error_relativo(vact, vant):
 
     return el error relativo de vact y vant.
     """
-    return abs(((vact - vant) / vact))
+    return abs(((vact - vant) / vact)) #implementacion del error relativo con m1 - m2 / m2
 
 
 def biseccion(fx, inter, er, n):
@@ -36,10 +36,10 @@ def biseccion(fx, inter, er, n):
     PuntoMedioPrevio = 0  # Aqui el punto medio anterior
 
     while Iteraciones < n and Ea > er:
-        PuntoMedioPrevio = PuntoMedioActual
-        PuntoMedioActual = (Intera + Interb) / 2
+        PuntoMedioPrevio = PuntoMedioActual # en cada iteracion pasamos el punto medio a vovlerse previo
+        PuntoMedioActual = (Intera + Interb) / 2 # a + b entre 2 para sacar el punto medio
 
-        if fx(PuntoMedioActual) * fx(Interb) < 0:
+        if fx(PuntoMedioActual) * fx(Interb) < 0: # f(a) x f(b) sea menor a 0
             Intera = PuntoMedioActual
         else:
             Interb = PuntoMedioActual
