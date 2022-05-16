@@ -1,9 +1,9 @@
 import math
 from unittest import TestCase
 
-from . ejercicio_biseccion import biseccion as profe_biseccion
+from ejercicio_biseccion import biseccion as profe_biseccion
 # INCLUIR ABAJO SU IMPORT
-# from . pedro_perez_biseccion import biseccion as pedro_perez_biseccion
+from Duberth_Farias_biseccion import biseccion as pedro_perez_biseccion
 
 
 class TestEjercicios(TestCase):
@@ -17,4 +17,5 @@ class TestEjercicios(TestCase):
 
 if __name__ == "__main__":
     # Testing.
+    
     pass
