@@ -1,0 +1,49 @@
+import match
+"""
+Nombre y Apellidos: <Luis Diaz>
+Cédula: <V-24766315>
+"""
+
+def biseccion():
+	x1 = float(raw_input("Valor de x1: "))
+	x2 = float(raw_input("Valor de x2: "))
+
+	if (f(x1)*f(x2) < 0): #VALIDA QUE SE CUMPLE LA CONDICION f(a)*f(b) <  0
+				
+		error =float(raw_input("Indique el error: "))		
+		numero_iteraciones = float(raw_input("N de iteraciones: "))
+			
+		print ""
+		print '-----------------------------------------------------'
+		print '| {0:10} | {1:10} | {2:10} | {3:10} |'.format("Iteracion", "M", "Error","f(x)")
+		print '-----------------------------------------------------'
+		iterar(x1, x2, error, x1+x2, numero_iteraciones, 0)  #Llamado a la funcion que realiza las iteraciones
+	else:
+		print "No se puede aplicar el metodo ya que no se cumple que f(a)*f(b) <  0"
+
+
+def iterar (x1, x2, Error, man, ni,i):
+	m = (x1 + x2)/2 #valor intermedio
+	if ( calcular_error(m, man) < Error or i > ni):
+		print '| {0:10} | {1:10.7f} | {2:10.7f} | {3:10.7f} |'.format("I" + str(i), m, calcular_error(m, man),f (m))
+		print '-----------------------------------------------------'
+		print ""
+		print "RESULTADO"
+		print '----------------------------------------------'
+		print '| {0:12} | {1:12} | {2:12} |'.format("Error final", "Valor de m", "F(m)")
+		print '----------------------------------------------'
+		print '| {0:12.8f} | {1:12.8f} | {2:12.8f} |'.format(calcular_error(m,man), m, f (m))
+		print '----------------------------------------------'
+		
+	else:
+		if ((f(x1) >= 0 and f(m) < 0) or (f(m) >= 0 and f(x1) < 0)): #evalua si es positivo el resultado
+			print '| {0:10} | {1:10.7f} | {2:10.7f} | {3:10.7f} |'.format("m" + str(i), m, calcular_error(m, man),f (m))
+			i= i+1
+			iterar (x1, m, Error,m, ni, i)
+		else: #si el resultado es negativo
+			print '| {0:10} | {1:10.7f} | {2:10.7f} | {3:10.7f} |'.format("m" + str(i), m, calcular_error(m, man),f (m))
+			i= i+1
+			iterar (m, x2, Error,m, ni,i) #Llamada recursiva
+
+def calcular_error(actual, anterior):
+	return abs((actual-anterior)/actual)
