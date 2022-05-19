@@ -9,8 +9,8 @@ from jesus_gonzalez_biseccion import biseccion as jesus_gonzalez_biseccion
 from cesar_albornoz_biseccion import biseccion as cesar_albornoz_biseccion
 from cesar_zabala_biseccion import biseccion as cesar_zabala_biseccion
 from nestor_aguilar_biseccion import biseccion as nestor_aguilar_biseccion
+from Omar_Gaspar_biseccion import biseccion as Omar_Gaspar_biseccion
 from Duberth_Farias_biseccion import biseccion as Duberth_Farias_biseccion
-
 
 class TestEjercicios(TestCase):
 
