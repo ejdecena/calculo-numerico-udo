@@ -4,13 +4,15 @@ from unittest import TestCase
 from ejercicio_biseccion import biseccion as profe_biseccion
 from kevin_rojas_biseccion import biseccion as kevin_rojas_biseccion
 # INCLUIR ABAJO SU IMPORT
+from Duberth_Farias_biseccion import biseccion as Duberth_Farias_biseccion
 from jeremy_gonzalez_biseccion import biseccion as jeremy_gonzalez_biseccion 
 from jesus_gonzalez_biseccion import biseccion as jesus_gonzalez_biseccion
 from cesar_albornoz_biseccion import biseccion as cesar_albornoz_biseccion
 from cesar_zabala_biseccion import biseccion as cesar_zabala_biseccion
 from nestor_aguilar_biseccion import biseccion as nestor_aguilar_biseccion
 from Omar_Gaspar_biseccion import biseccion as Omar_Gaspar_biseccion
-from Duberth_Farias_biseccion import biseccion as Duberth_Farias_biseccion
+from ulises_hernandez_biseccion import biseccion as ulises_hernandez_biseccion
+
 
 class TestEjercicios(TestCase):
 
